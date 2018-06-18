@@ -4,6 +4,7 @@ export const isFileList = value =>
 
 export const isUploadFile = value =>
   (typeof File !== 'undefined' && value instanceof File) ||
+  (typeof Blob !== 'undefined' && value instanceof Blob) ||
   value instanceof ReactNativeFile
 
 /**
